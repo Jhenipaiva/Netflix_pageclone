@@ -1,41 +1,49 @@
 
-            <a href="INFANTIL"></a>
-                <i class="fa-solid fa-bell"></i>
+header .containermenu{
+    min-height: 65px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    background-color:var(--preta);
+    display: inline;
+    }
+
+    
+    .conttainermenu{
+        display:inline;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        margin-top: 20px;
+        
+        text-decoration:none;
+        color: #fff;
+        transition: .4s ease all;
+    }
+
+header nav ul{
+    align-items: center;
+    display: flex;
+}
+
+.menu-diferente {
+    background: rgba(131, 131, 131, 0) 
+}
 
 
-                MENU
-
-                <ul class="primeiro-menu">
-                <li class="navegar-menu">
-                    <a class="menu-trigger" role="button" aria-haspopup="true" tabindex="0">Navegar</a>
-                </li>
-                <li class="inicio" >
-                    <a href="#">Início</a>
-                </li>
-                <li class="inicio" >
-                    <a href="#">Séries</a>
-                </li>
-                <li class="inicio" >
-                    <a href="#">Filmes</a>
-                </li>
-                <li class="inicio" >
-                    <a href="#">Bombando</a>
-                </li>
-                <li class="inicio" >
-                    <a href="#">Minha Lista</a>
-                </li>
-                <li class="inicio" >
-                    <a href="#">Assista de novo</a>
-                </li>
-            </ul>
-            <div class="segundo-menu">
-                <div class="elemento-nav">
-                    <div class="caixa-pesquisar">
-                        <button class="pesquisar">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            
-                        <a href="INFANTIL"></a>
-                            <i class="fa-solid fa-bell"></i>
 
 
-                        </button>
+
+
+
+
+
+
+
+
+
+
+
+

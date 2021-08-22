@@ -1,0 +1,22 @@
+.box-filme .box-serie .box-doc{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.carrossel-filmes .carrossel-doc .carrossel-series{
+    margin-top: 20px;
+}
+
+h3{
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.sessao{
+    margin-top: 20px;
+    font-size: 18px;
+}

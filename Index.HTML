@@ -17,24 +17,54 @@
 
 </head>
 <body>
-    <header class="header">
-
+    <header>
             <nav>
-                <a href="#"><img src="/img/logo.png" class="logo" alt="logo"></a>
-
+                <div class="menu">
+                    <a href="#"><img src="/img/logo.png" class="logo" alt="logo"></a>
+        
                 <ul class="menu1">
                     <li><a href="#">Inicio</a></li> 
                     <li><a href="#">Séries</a></li> 
                     <li><a href="#">Filmes</a></li> 
                     <li><a href="#">Bombando</a></li> 
                     <li><a href="#">Minha Lista</a></li> 
-                    <li><a href="#">Assista de novo</a></li>     
+                    <li><a href="#">Assista de novo</a></li> 
+                    
+                    <div class="menu-1-small">
+                        <div class="dropdown">
+                          <button class="button-menu">
+                            Navegar
+                            <span aria-hidden="true" class="fa fa-sort-desc arrow-menu"></span>
+                          </button>
+                          <div class="dropdown-content">
+                            <li><a href="#">Inicio</a></li> 
+                            <li><a href="#">Séries</a></li> 
+                            <li><a href="#">Filmes</a></li> 
+                            <li><a href="#">Bombando</a></li> 
+                            <li><a href="#">Minha Lista</a></li> 
+                            <li><a href="#">Assista de novo</a></li> 
+                          </div>
+                        </div>
+                    </div>
                 </ul>
-                <div id="menu2">        
-                    <div><a href="#"><i class="fas fa-search"></i></a></div>
-                    <div><a href="#"><i class="fas fa-bell"></i></a></div>
-                    <div><a href="#"><img src="/img/perfil.png" class="perfil"  alt="perfil"></a></div>
-                </div>
+
+                <ul class="menu2">        
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                        <div class="dropdown">
+                            <button class="button-menu left-header">
+                            <a href="#"><img src="/img/perfil.png" class="perfil"  alt="perfil"></a>
+                          <span aria-hidden="true" class="fa fa-sort-desc arrow-menu"></span>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#">Conta</a>
+                          <a href="#">Centro de Ajuda</a>
+                          <a href="#">Sair da Historyflix</a>
+                        </div>
+                      </div>
+                    </div>
+                    
+                </ul>
             </nav>
     </header>
 
@@ -49,7 +79,7 @@
                 <div class="botoes">
                     <button role="button" class="botao">
                         <i class="fas fa-play"></i>
-                         ASSISTIR AGORA
+                         ASSISTIR
                     </button>
                     <button role="button" class="botao">
                         <i class="fas fa-info-circle"></i>
@@ -187,5 +217,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 
+    <div class="footer">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram"></i>
+        <a href="#" target="_blank">Desenvolvido por Jhenifer Paiva</a>
+      </div>
 </body>
 </html>
