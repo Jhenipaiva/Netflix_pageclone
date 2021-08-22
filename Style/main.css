@@ -16,7 +16,7 @@ body{
     color: #fff;
 }
 /*-----------------------------------------*/
-header .menus{
+header{
     min-height: 65px;
     position: fixed;
     right: 0;
@@ -24,6 +24,31 @@ header .menus{
     left: 0;
     background-color:var(--preta);
     display: inline;
+    }
+
+    ul li {
+        display: inline;
+    }
+
+    .menu2 a{
+        display: inline;
+    }
+    
+    .header{
+        display: inline;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        margin-top: 20px;
+        
+    
+        text-decoration:none;
+        color: #fff;
+        transition: .4s ease all;
+    }
+    header .container a:hover{
+        color: #aaa;
     }
 
 header .logo{
@@ -35,6 +60,10 @@ header .logo{
     margin-right: 30px;
     height: 25px;
     border-radius: 2px;
+}
+
+.menu-diferente{
+    background: rgba(131, 131, 131, 0)
 }
 
 /*------------FILME PRINCIPAL---------------*/
@@ -99,22 +128,14 @@ header .logo{
     margin-right: 8px;
 }
 
-.box-filme{
+.box-filme .box-serie .box-doc{
     height: 100%;
     width: 100%;
     display: block;
     cursor: pointer;
 }
 
-.carrossel-filmes{
-    margin-top: 5px;
-}
-
-.carrossel-series{
-    margin-top: 5px;
-}
-
-.carrossel-doc{
+.carrossel-filmes .carrossel-doc .carrossel-series{
     margin-top: 5px;
 }
 
@@ -123,12 +144,16 @@ header .logo{
 }
 
 .sessao{
-    font-size: 12px;
+    font-size: 18px;
 }
 
 .container{
     margin-left: 50px;
 }
+
+.container a:hover{
+    color: #aaa;
+    transition: .4s ease all;}
 
 .filme-principal .container{
     width: 60%;

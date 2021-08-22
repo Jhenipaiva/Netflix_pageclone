@@ -10,6 +10,7 @@ header nav ul{
 
 .menu-diferente {
     background: rgba(131, 131, 131, 0) 
+    transition: all -0.4s;
 }
 
 header .container{
