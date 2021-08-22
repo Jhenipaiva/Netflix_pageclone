@@ -1,0 +1,41 @@
+
+            <a href="INFANTIL"></a>
+                <i class="fa-solid fa-bell"></i>
+
+
+                MENU
+
+                <ul class="primeiro-menu">
+                <li class="navegar-menu">
+                    <a class="menu-trigger" role="button" aria-haspopup="true" tabindex="0">Navegar</a>
+                </li>
+                <li class="inicio" >
+                    <a href="#">Início</a>
+                </li>
+                <li class="inicio" >
+                    <a href="#">Séries</a>
+                </li>
+                <li class="inicio" >
+                    <a href="#">Filmes</a>
+                </li>
+                <li class="inicio" >
+                    <a href="#">Bombando</a>
+                </li>
+                <li class="inicio" >
+                    <a href="#">Minha Lista</a>
+                </li>
+                <li class="inicio" >
+                    <a href="#">Assista de novo</a>
+                </li>
+            </ul>
+            <div class="segundo-menu">
+                <div class="elemento-nav">
+                    <div class="caixa-pesquisar">
+                        <button class="pesquisar">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            
+                        <a href="INFANTIL"></a>
+                            <i class="fa-solid fa-bell"></i>
+
+
+                        </button>
