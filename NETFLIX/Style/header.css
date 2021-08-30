@@ -1,0 +1,123 @@
+header{
+    position: fixed !important;
+    right: 0;
+    top: 0;
+    left: 0;
+    transition: all .4s;
+    background-image:linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
+    z-index: 5;
+}
+
+header .menu{
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    min-height: 65px;  
+}
+
+header .menu2{
+    margin-left: auto;
+    vertical-align: middle;
+    align-items: baseline;
+}
+
+ul li {
+    display: inline; 
+}
+
+header nav a{
+    text-decoration:none;
+    color:#fff;
+    transition: .4s ease all;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color:#aaa;
+}
+
+.logo{
+    margin-right: 30px;
+    margin-left: 50px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.perfil{
+    height: 25px;
+    border-radius: 2px;
+    vertical-align: middle;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.fas{
+    margin-left: 15px;
+}
+
+.button-menu {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    outline: inherit;
+    cursor: pointer;
+    transition: .4s ease all;
+  }
+
+  .arrow-menu {
+    margin-right: 40px;
+    transform: rotate(180deg);
+  }
+
+  .arrow-menu:hover{
+    transform: rotate(360deg);  
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #141414;
+    opacity: 70%;
+    min-width: 80px;
+    margin-right: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-weight: bold;
+  }
+
+  .dropdown-content a {
+    color: #fff !important;
+    padding: 20px 30px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover{
+    text-decoration: underline;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    position:absolute;
+  }
+  
+  .menu1, .menu2 {
+    display: flex;
+  }
+  
+  .menu-1-small, .menu-2-small {
+    display: none;
+  }
+
+    .menu-diferente {
+        background: rgb(20, 20, 20);
+        transition: all .4s;
+    }
+  

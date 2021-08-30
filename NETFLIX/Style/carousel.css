@@ -1,0 +1,43 @@
+.box-filme .box-serie .box-doc{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    margin-top: 10px;
+    
+}
+
+.carrossel-filmes .carrossel-doc .carrossel-series{
+    margin-top: 20px;
+}
+
+section{
+    margin-top: 10px;
+    font-size: 18px;
+    top:0;
+    z-index: 1;
+}
+
+.titulo-filmes{
+    background-image:linear-gradient(to top,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+#owl-demo {
+  background: linear-gradient(rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
+  padding: 5px;
+  text-align: center;
+}
+
+.item img{
+width: 100%;
+
+}
+.item img:hover{
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.1);
+}
