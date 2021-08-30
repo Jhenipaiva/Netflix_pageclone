@@ -2,6 +2,7 @@
 @import '/Style/principal.css';
 @import '/Style/footer.css';
 @import '/Style/carousel.css';
+@import '/Style/lupa.css';
 
 
 :root{
@@ -17,14 +18,14 @@
 }
 
 body{
+    
+    background-size: cover !important;
     background-color: #141414 ;
     font-size: 16px;
     color: #fff;
-  min-height: 100% !important;
-
-    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/outlander.gif') no-repeat, var(--preta) ;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/capa-outlander.jpg'), var(--preta) ;
     height: 100vh;
     position: relative;
-    background-size: cover ;
+    background-repeat: no-repeat;
 }
 

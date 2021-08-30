@@ -1,21 +1,24 @@
 header{
-    position: fixed;
+    position: fixed !important;
     right: 0;
     top: 0;
     left: 0;
+    transition: all .4s;
     background-image:linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
-
+    z-index: 5;
 }
+
 header .menu{
     display:flex;
     align-items: center;
-    
     flex-direction: row;
     min-height: 65px;  
 }
 
 header .menu2{
     margin-left: auto;
+    vertical-align: middle;
+    align-items: baseline;
 }
 
 ul li {
@@ -44,31 +47,32 @@ header nav a:hover{
     height: 25px;
     border-radius: 2px;
     vertical-align: middle;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     margin-left: 15px;
+    margin-top: 5px;
 }
 
 .fas{
     margin-left: 15px;
 }
 
-  
 .button-menu {
     background: none;
-      border: none;
-      color: inherit;
-      font: inherit;
-      outline: inherit;
+    border: none;
+    color: inherit;
+    font: inherit;
+    outline: inherit;
     cursor: pointer;
     transition: .4s ease all;
   }
 
-  .button-menu:hover {
-      color: #aaa;
-  }
-
   .arrow-menu {
     margin-right: 40px;
+    transform: rotate(180deg);
+  }
+
+  .arrow-menu:hover{
+    transform: rotate(360deg);  
   }
   
   .dropdown {
@@ -80,25 +84,28 @@ header nav a:hover{
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #000;
+    background-color: #141414;
     opacity: 70%;
     min-width: 80px;
     margin-right: 20px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    font-weight: bold;
   }
 
   .dropdown-content a {
     color: #fff !important;
-    padding: 12px 16px;
+    padding: 20px 30px;
     text-decoration: none;
     display: block;
-    position: relative;
-    text-decoration: none;
+  }
+
+  .dropdown-content a:hover{
+    text-decoration: underline;
   }
   
   .dropdown:hover .dropdown-content {
     display: block;
+    position:absolute;
   }
   
   .menu1, .menu2 {
@@ -108,27 +115,9 @@ header nav a:hover{
   .menu-1-small, .menu-2-small {
     display: none;
   }
-  
-  @media(max-width: 520px) {
-    .menu1, .menu2 {
-      display: none;
-    }
-  
-    .menu-1-small, .menu-2-small {
-      display: flex;
+
+    .menu-diferente {
+        background: rgb(20, 20, 20);
+        transition: all .4s;
     }
   
-    .menu-2-small {
-      font-size: 12px;
-    }
-    
-    .button-menu {
-      margin-left: 10px;
-    }
-}
-
-
-
-/*.menu-diferente{
-    background: rgba(131, 131, 131, 0)
-}*/

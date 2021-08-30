@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style/main.css">
 
     <title>Historyflix</title>
-    <link rel="shortcut icon" href="/img/net.ico">
+    <link rel="shortcut icon" href="/img/ico.ico">
 
     <!--responsive-->
     <link rel="stylesheet" href="/Style/responsive.css">
@@ -17,8 +17,9 @@
 
 </head>
 <body>
-    <header>
+    <header>       
             <nav>
+               
                 <div class="menu">
                     <a href="#"><img src="/img/logo.png" class="logo" alt="logo"></a>
         
@@ -26,7 +27,6 @@
                     <li><a href="#">Inicio</a></li> 
                     <li><a href="#">Séries</a></li> 
                     <li><a href="#">Filmes</a></li> 
-                    <li><a href="#">Bombando</a></li> 
                     <li><a href="#">Minha Lista</a></li> 
                     <li><a href="#">Assista de novo</a></li> 
                     
@@ -40,7 +40,6 @@
                             <li><a href="#">Inicio</a></li> 
                             <li><a href="#">Séries</a></li> 
                             <li><a href="#">Filmes</a></li> 
-                            <li><a href="#">Bombando</a></li> 
                             <li><a href="#">Minha Lista</a></li> 
                             <li><a href="#">Assista de novo</a></li> 
                           </div>
@@ -48,10 +47,13 @@
                     </div>
                 </ul>
 
-                <ul class="menu2">        
-                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <ul class="menu2">
+                    <div class="container-lupa">
+                    <input type="search" name="busca" class="busca" placeholder="    Títulos, gênero e gente">
+                </div>
                     <li><a href="#"><i class="fas fa-bell"></i></a></li>
-                        <div class="dropdown">
+                        
+                    <div class="dropdown">
                             <button class="button-menu left-header">
                             <a href="#"><img src="/img/perfil.png" class="perfil"  alt="perfil"></a>
                           <span aria-hidden="true" class="fa fa-sort-desc arrow-menu"></span>
@@ -66,13 +68,29 @@
                     
                 </ul>
             </nav>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+            <script type="text/javascript">
+            jQuery(function () {
+              jQuery(window).scroll(function () {
+                if (jQuery(this).scrollTop() > 60) {
+                 $("header").addClass("menu-diferente");
+                } else {
+                 $("header").removeClass("menu-diferente");
+                }
+              });
+            });
+            </script>
+
+
     </header>
 
     <main>
         <div class="filme-principal">
             <div class="container">
                 <img src="/img/titulo.png" class="tituloimage" alt="titulo">
-                <h3>Outlander</h3>
+                <h2>Assista à temporada 5 agora</h2>
                 <p class="detalhes">2014 | 16 | 5 temporadas | <a href="#"> Séries Dramáticas</a> </p>            
                 <p class="descricao">Nesse conto épico, um guerreiro e uma enfermeira vivem uma paixão avassaladora, mas 200 anos os separam.</p>
             
@@ -88,7 +106,7 @@
                 </div>
            </div>
         </div>
-    </main>
+    
 
 
     <div class="sessao">
@@ -97,7 +115,7 @@
             <h3 class="titulo-filmes">Filmes</h3>
 
     <div class="carrossel-filmes">
-        <div class="owl-carousel owl-theme">
+        <div id="owl-demo" class="owl-carousel owl-theme">
                 <div class="item">
                     <img class="box-filme" src="img/mini1.jpg" alt="image">
                 </div>
@@ -207,20 +225,18 @@
                  </div>
             </div>
         </div>
-    </section>
+        </section>
+    </main>
 
+        <script src="https://kit.fontawesome.com/be00519b86.js" crossorigin="anonymous"></script>
+        <script src="js/owl/jquery.min.js"></script>
+        <script src="js/owl/owl.carousel.min.js"></script>
+        <script script src="/js/setup.js"></script>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 
-    <script src="https://kit.fontawesome.com/be00519b86.js" crossorigin="anonymous"></script>
-    <script src="js/owl/jquery.min.js"></script>
-    <script src="js/owl/owl.carousel.min.js"></script>
-    <script src="/js/setup.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-
-    <div class="footer">
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-instagram"></i>
-        <a href="#" target="_blank">Desenvolvido por Jhenifer Paiva</a>
-      </div>
+        <div class="footer">
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/Jhenipaiva" target="_blank">Desenvolvido por Jhenifer Paiva</a>
+        </div>
 </body>
 </html>

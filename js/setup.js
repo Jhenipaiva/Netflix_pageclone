@@ -1,8 +1,9 @@
 $('.owl-carousel').owlCarousel({
     loop:true,
-    margin:10,
+    margin:15,
     pagination:false,
     dots:false,
+    responsiveClass: true,
     responsive:{
         0:{
             items:1
@@ -15,3 +16,5 @@ $('.owl-carousel').owlCarousel({
         }
     }
 });
+
+
